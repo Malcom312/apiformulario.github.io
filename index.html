@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Rick y Morty</title>
+</head>
+<body>
+    <h1>Formulario Rick y Morty</h1>
+    <form action="https://formsubmit.co/bsnarvaez222@umariana.edu.co" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje del formulario Rick y Morty">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Gracias por completar el formulario.">
+        
+        <div class="mb-3">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+            <div id="emailHelp">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" id="exampleInputPassword1" name="password">
+        </div>
+    
+        <hr> 
+        
+        <label for="nivel_energia">Nivel de Energía del Portal:</label>
+        <input type="number" id="nivel_energia" name="nivel_energia" min="0" max="100" required><br><br>
+        
+        <label for="indice_rick">Índice de Rick-tividad:</label>
+        <input type="number" id="indice_rick" name="indice_rick" step="0.1" min="0" max="10" required><br><br>
+        
+        <label for="dimension_actual">Dimensión Actual:</label>
+        <input type="text" id="dimension_actual" name="dimension_actual" required><br><br>
+        
+        <label for="num_mortys">Número de Mortys Acompañantes:</label>
+        <input type="number" id="num_mortys" name="num_mortys" min="0" required><br><br>
+        
+        <label for="sospecha_jerry">Escala de Sospecha de Jerry:</label>
+        <input type="number" id="sospecha_jerry" name="sospecha_jerry" step="0.01" min="0" max="100" required><br><br>
+        
+        <label for="megaseeds_recolectados">Cantidad de Megaseeds Recolectados:</label>
+        <input type="number" id="megaseeds_recolectados" name="megaseeds_recolectados" min="0" required><br><br>
+        
+        <label for="estado_multiverso">Estado del Multiverso:</label>
+        <input type="text" id="estado_multiverso" name="estado_multiverso" required><br><br>
+        
+        <label for="potencia_plumbus">Potencia del Plumbus:</label>
+        <input type="number" id="potencia_plumbus" name="potencia_plumbus" step="0.1" min="0" max="1000" required><br><br>
+        
+        <label for="distancia_federacion">Distancia hasta la Federación Galáctica (años luz):</label>
+        <input type="number" id="distancia_federacion" name="distancia_federacion" required><br><br>
+        
+        <label for="cronenbergs">Existencia de Cronenbergs:</label>
+        <select id="cronenbergs" name="cronenbergs" required>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+        </select><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
